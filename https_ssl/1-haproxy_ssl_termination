@@ -44,5 +44,5 @@ frontend www.cprogramming.tech
 backend cprogram_servers
         mode http
         balance roundrobin
-        server 5873-web-01 34.207.208.97:80 check
-        server 5873-web-02 54.237.215.64:80 check
+        server 5815-web-01 100.26.36.29:80 check
+        server 5815-web-02 34.224.69.25:80 check
