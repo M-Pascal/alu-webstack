@@ -34,10 +34,10 @@ defaults
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
 
-frontend www.cprogramming.tech
+frontend www.blessingpasco.tech
         mode http
         bind :80
-        bind :443 ssl crt /etc/letsencrypt/live/www.cprogramming.tech/combined.pem
+        bind :443 ssl crt /etc/letsencrypt/live/www.blessingpasco.tech/combined.pem
         http-request redirect scheme https code 301 unless { ssl_fc }
         default_backend cprogram_servers
 
